@@ -16,7 +16,7 @@ date
 mkdir -p /etc/trojan/
 touch /etc/trojan/akun.conf
 # install v2ray
-wget https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)"
 mkdir /root/.acme.sh
@@ -491,19 +491,19 @@ systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O add-ws "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/add-tr.sh"
-wget -O del-ws "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/del-ws.sh"
-wget -O del-vless "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/del-vless.sh"
-wget -O del-tr "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/del-tr.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/cek-ws.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/cek-vless.sh"
-wget -O cek-tr "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/cek-tr.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/renew-ws.sh"
-wget -O renew-vless "tps://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/renew-vless.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/renew-tr.shsh"
-wget -O certv2ray "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/cert.sh"
+wget -O add-ws "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/add-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/add-tr.sh"
+wget -O del-ws "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/del-ws.sh"
+wget -O del-vless "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/del-vless.sh"
+wget -O del-tr "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/del-tr.sh"
+wget -O cek-ws "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/cek-ws.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/cek-vless.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/cek-tr.sh"
+wget -O renew-ws "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/renew-ws.sh"
+wget -O renew-vless "tps://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/renew-vless.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/renew-tr.shsh"
+wget -O certv2ray "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/cert.sh"
 chmod +x add-ws
 chmod +x add-vless
 chmod +x add-tr
