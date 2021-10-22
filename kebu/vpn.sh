@@ -14,7 +14,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/vpn.zip
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
