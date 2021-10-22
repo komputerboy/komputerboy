@@ -20,7 +20,7 @@ echo "Please Contact :"
 echo "Whatsapp : wa.me/6282311190332"
 echo "Telegram : t.me/sshsedang4"
 rm -f setup.sh
-exit 0
+#exit 0
 fi
 if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
