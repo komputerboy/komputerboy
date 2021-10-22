@@ -11,7 +11,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
-IZIN=$( curl https://raw.githubusercontent.com/komputerboy/autoscript/main/kota/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/komputerboy/komputerboy/main/kota/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -20,7 +20,7 @@ echo "Please Contact :"
 echo "Whatsapp : wa.me/6282311190332"
 echo "Telegram : t.me/sshsedang4"
 rm -f setup.sh
-#exit 0
+exit 0
 fi
 if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
@@ -28,22 +28,22 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #install wireguard
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-#wget https://raw.githubusercontent.com/komputerboy/autoscript/main/kebu/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+#wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-#wget https://raw.githubusercontent.com/komputerboy/autoscript/main/men/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
+#wget https://raw.githubusercontent.com/komputerboy/komputerboy/main/men/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
