@@ -5,7 +5,7 @@ NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.me/ip);
 NIC=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/SSHSEDANG4/gaspoll/main/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/komputerboy/komputerboy/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
