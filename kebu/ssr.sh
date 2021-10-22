@@ -122,7 +122,7 @@ if [[ ${OS} == "centos" ]]; then
 }
 Start_SSR(){
 	check_pid
-	wget -O /etc/init.d/ssrmu "https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/ssrmu?token=AVIBES53FBPSBPQOBJB6BILBE6NTY"
+	wget -O /etc/init.d/ssrmu "https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/ssrmu?token=AVIBES53FBPSBPQOBJB6BILBE6NTY"
 	/etc/init.d/ssrmu start
 }
 Install_SSR(){
@@ -138,9 +138,9 @@ Save_iptables
 Start_SSR
 }
 Install_SSR
-wget -O /usr/bin/ssr https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/ssrmu.sh && chmod +x /usr/bin/ssr
-wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/add-ssr.sh && chmod +x /usr/bin/add-ssr
-wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/del-ssr.sh && chmod +x /usr/bin/del-ssr
-wget -O /usr/bin/renew-ssr https://raw.githubusercontent.com/SSHSEDANG4/sshsedang/main/kebu/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
+wget -O /usr/bin/ssr https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/ssrmu.sh && chmod +x /usr/bin/ssr
+wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/add-ssr.sh && chmod +x /usr/bin/add-ssr
+wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/del-ssr.sh && chmod +x /usr/bin/del-ssr
+wget -O /usr/bin/renew-ssr https://raw.githubusercontent.com/komputerboy/komputerboy/main/kebu/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
 touch /usr/local/shadowsocksr/akun.conf
 rm -f /root/ssr.sh
